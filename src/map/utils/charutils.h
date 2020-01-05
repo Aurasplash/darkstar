@@ -131,6 +131,7 @@ namespace charutils
     void	SaveCharJob(CCharEntity* PChar, JOBTYPE job);		        // сохраняем уровень для выбранной профессий персонажа
     void	SaveCharJobDeath(CCharEntity* PChar, JOBTYPE job);          // Aurora Relevel System
     void	SaveCharExp(CCharEntity* PChar, JOBTYPE job);		        // сохраняем опыт для выбранной профессии персонажа
+    void    SaveCharDeaths(CCharEntity* PChar, JOBTYPE job);            // Aurora Relevel System
     void	SaveCharEquip(CCharEntity* PChar);					        // сохраняем экипировку и внешний вид персонажа
     void    SaveCharLook(CCharEntity* PChar);                           // Saves a character's appearance based on style locking.
     void	SaveCharPosition(CCharEntity* PChar);				        // сохраняем позицию персонажа

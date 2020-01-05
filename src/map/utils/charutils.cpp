@@ -3595,7 +3595,7 @@ namespace charutils
 
         if (PChar->jobs.exp[PChar->GetMJob()] < exploss)
         {
-            PChar_.jobs.deathcount += 1; //Aurora Relevel Death Tracker
+            PChar->jobs.deathcount += 1; //Aurora Relevel Death Tracker
 
             if (PChar->jobs.job[PChar->GetMJob()] > 1)
             {
