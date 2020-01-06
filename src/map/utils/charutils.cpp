@@ -3649,7 +3649,9 @@ namespace charutils
                 {
                     if (PChar->PParty->GetSyncTarget() == PChar)
                     {
-                        PChar->PParty->RefreshSync();
+                        // Aurora Syncee Death everyone Resyncs to lvl 1 Fix. Next is to make it Desync the party here Instead (1 line)
+                        //PChar->PParty->RefreshSync();
+
                     }
                     PChar->PParty->ReloadParty();
                 }
