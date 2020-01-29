@@ -3122,8 +3122,8 @@ namespace charutils
     {
         uint32 baseExp = GetRealExp(charlvl, moblvl);
 
-        if (baseExp >= 620) return EMobDifficulty::IncrediblyTough;
-        if (baseExp >= 280) return EMobDifficulty::VeryTough;
+        if (baseExp >= 430) return EMobDifficulty::IncrediblyTough;
+        if (baseExp >= 240) return EMobDifficulty::VeryTough;
         if (baseExp >= 120) return EMobDifficulty::Tough;
         if (baseExp >= 100) return EMobDifficulty::EvenMatch;
         if (baseExp >= 61) return EMobDifficulty::DecentChallenge;
@@ -3141,7 +3141,7 @@ namespace charutils
 
     uint32 GetRealExp(uint8 charlvl, uint8 moblvl)
     {
-        const int32 levelDif = moblvl - charlvl + 44;
+        const int32 levelDif = moblvl - charlvl + 38;
 
         if ((charlvl > 0) && (charlvl < 100))
             return g_ExpTable[std::clamp(levelDif, 0, ExpTableRowCount - 1)][(charlvl - 1) / 5];
@@ -3351,7 +3351,7 @@ namespace charutils
                     {
                         switch (pcinzone)
                         {
-                            //Aurasplash PartyShare Bonus
+                            //Aurora PartyShare Bonus
                             /*case 1: exp *= 1.00f; break;
                             case 2: exp *= 0.75f; break;
                             case 3: exp *= 0.55f; break;
@@ -3373,7 +3373,7 @@ namespace charutils
                     {
                         switch (pcinzone)
                         {
-                            //Aurasplash PartyShare Bonus
+                            //Aurora PartyShare Bonus
                             /*case 1: exp *= 1.00f; break;
                             case 2: exp *= 0.75f; break;
                             case 3: exp *= 0.55f; break;
