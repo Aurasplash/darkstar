@@ -1414,7 +1414,7 @@ dsp.helm.onTrade = function(player, npc, trade, helmType, csid)
         if item ~= 0 and full == 0 then
             player:addItem(item)
 
-            local uses = (npc:getLocalVar("uses") - 1) % 4
+            local uses = (npc:getLocalVar("uses") - 1) % 11
             npc:setLocalVar("uses", uses)
             if uses == 0 then
                 movePoint(npc, zoneId, info)
